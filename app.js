@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-	  res.write("manthewise first app");
+	  res.write("manthewise first app 2nd ec2");
 	  res.end();
 });
 
