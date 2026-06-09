@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-	  res.write("manthewise first app 2nd ec2, docker now included love this");
+	  res.write("manthewise first app 2nd ec2, docker now included love this, devops is exicting");
 	  res.end();
 });
 
