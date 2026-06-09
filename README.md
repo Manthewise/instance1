@@ -280,11 +280,16 @@ Through this project I learned:
 ---
 #   Screenshots
 
+
 <img width="1357" height="653" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/cdd059fd-efaa-499c-9212-f2b8a56ec1ed" />
  - GitHub Actions successful deployment
 
+
+
 <img width="1366" height="768" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/e59e782d-0d41-4069-9e39-d3b5d5ab1a32" />
  - EC2 instance running, Docker container running
+
+
 
 <img width="1366" height="768" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/9a8cb316-3229-490c-bf3d-8451f6c659e3" />
  - Website loading over HTTPS
