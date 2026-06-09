@@ -30,25 +30,25 @@ The goal of this project was to gain hands-on experience with:
 
 #  Architecture
 
-```text
-                    Internet
-                        │
-                        ▼
-               ┌────────────────┐
-               │     Nginx      │
-               │ Reverse Proxy  │
-               └───────┬────────┘
-                       │
-                       ▼
-               ┌────────────────┐
-               │ Docker Network │
-               └───────┬────────┘
-                       │
-                       ▼
-               ┌────────────────┐
-               │   Node.js App  │
-               │   Port 3000    │
-               └────────────────┘
+```text    
+       [ Public Internet ]
+               │
+      https:// (Port 443)
+               ▼
+┌──────────────────────────────┐
+│     Nginx Reverse Proxy      │  <-- Handles SSL/TLS Certificates
+│ (manthewiseworld.duckdns.org)│
+└──────────────┬───────────────┘
+               │
+       http:// (Port 3000)
+               ▼
+┌──────────────────────────────┐
+│    Docker Bridge Network     │  <-- Isolated Container Space
+│  ┌────────────────────────┐  │
+│  │   Node.js Application  │  │  <-- Monitored by Docker Healthcheck
+│  └────────────────────────┘  │
+└──────────────────────────────┘
+
 ```
 
 ---
